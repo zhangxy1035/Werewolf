@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/wolf.js"></script>
+</head>
+<body>
+<p>狼人杀游戏简介:</p>
+<pre style="color: darkblue">
+    1、需求，在游戏中有法官，平民，狼人，预言家，女巫，猎人，丘比特，守卫，白痴等角色
+    2、在上述的角色中，每个人的技能不一，接下来会详细介绍
+    3、利用angularjs实现以下功能，用户在前台页面输入参与游戏的人数，后台返回结果，
+    4、结果示例如下：例如输入人数为10人，设定平民为4人，狼人为3人，预言家1人，女巫1人，猎人1人
+    5、平民为：2,3,4。女巫为：5，猎人为：9，预言家为：1，狼人为：6,7,10。
+    6、如下图所示，页面中的预言家，女巫，猎人，丘比特，守卫，白痴等可以自行选择。
+</pre>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span6">
+            <img src="lib/yl.png" style="width: 300px;height: auto"/>
+        </div>
+        <div class="span6" ng-app="myApp" ng-controller="myCtrl">
+            名: <input type="text" ng-model="firstName"><br>
+            姓: <input type="text" ng-model="lastName"><br>
+            <br>
+            姓名: {{firstName + " " + lastName}}
+        </div>
+    </div>
+</div>
+</body>
+</html>
